@@ -15,7 +15,7 @@ export const products = [
   {
     id: 2,
     name: 'Phone Mini',
-    price: 399,
+    price: 699,
     description: 'A great phone with one of the best cameras'
   },
   {
@@ -29,12 +29,6 @@ export const products = [
     name: 'Pixel 7',
     price: 699,
     description: 'Best camera phone ever'
-  },
-  {
-    id: 5,
-    name: 'Pixel 9 Pro',
-    price: 899,
-    description: 'Best google phone ever!'
   }
 ];
 
