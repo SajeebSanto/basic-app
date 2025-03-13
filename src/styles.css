@@ -13,12 +13,11 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
 }
 
 router-outlet + *  {
-  padding: 0 16px;
+  padding: 0 0 px;
 }
 
 /* Text */
@@ -120,6 +119,18 @@ label {
 .app-top-bar h1 {
   color: white;
   margin: 0;
+}
+
+.app-top-bar .google{
+  background-color: lightblue;
+}
+
+.app-top-bar .apple{
+  background-color: grey;
+  color: white;
+}
+.app-top-bar .apple h1{
+  color: white;
 }
 
 /* Checkout Cart, Shipping Prices */
