@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../cart.service';
 
 @Component({
@@ -7,11 +8,18 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.css']
 })
 
-export class CartComponent {
+export class CartComponent implements OnInit {
 
   items = this.cartService.getItems();
-
+  store: string = '';
   constructor(
+    private route: ActivatedRoute,
     private cartService: CartService
   ) { }
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+    this.store = params.get('store') || '';
+  }
+  );}
 }

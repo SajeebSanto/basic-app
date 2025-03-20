@@ -1,6 +1,8 @@
 <div class="app-top-bar" [ngClass]="store">
   <h1 *ngIf="store === 'google'">Welcome to the Google Store</h1>
   <h1 *ngIf="store === 'apple'">Welcome to the Apple Store</h1>
+  <h1 *ngIf="store === 'cart'">Cart items</h1>
+  <h1 *ngIf="store === 'product-details'">Product details</h1>
   <h1 *ngIf="!store">Welcome to Our Store</h1>
   <a routerLink="/cart" class="button fancy-button">
     <em class="material-icons">shopping_cart</em>Checkout

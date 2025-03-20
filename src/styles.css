@@ -148,3 +148,17 @@ label {
   background-color: #EEEEEE;
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.side-image {
+  position: fixed;
+  margin-right: 10px;
+  top: 25em;
+  right: 0;
+  transform: translateY( -50%);
+  width: 50%;
+  height: auto;
+}
+
